@@ -19,8 +19,8 @@
 \usepackage{balance}  % to better equalize the last page
 %\usepackage{graphics} % for EPS, load graphicx instead 
 \usepackage{graphicx}
-\usepackage{caption}
-\usepackage{subcaption}
+\usepackage[labelfont={bf},textfont={bf},font=small]{caption}
+\usepackage[labelfont={bf},textfont={bf},font=small]{subcaption} % if two images are rigth next to eachother
 \usepackage[T1]{fontenc}
 \usepackage{txfonts}
 \usepackage{mathptmx}
@@ -100,12 +100,16 @@
 
 \title{\plaintitle}
 
-\numberofauthors{1}
+\numberofauthors{2}
 \author{
 	\alignauthor{\authorname\\
 		\affaddr{Research Trends in Media Informatics}\\
 		\affaddr{Ulm, Germany}\\
 		\email{tobias.lahmann@uni-ulm.de}}
+	\alignauthor{Julian Frommel\\
+		\affaddr{Research Trends in Media Informatics}\\
+		\affaddr{Ulm, Germany}\\
+		\email{julian.frommel@uni-ulm.de}}
 }
 
 \maketitle
@@ -118,6 +122,10 @@
 \input{./sections/01keywords}
 
 \input{./sections/11introduction}
+
+\input{./sections/12physicalAndMental}
+
+\input{./sections/13physicalObjects}
 
 \input{./sections/96discussion}
 
