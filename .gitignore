@@ -178,3 +178,9 @@ TSWLatexianTemp*
 
 # KBibTeX
 *~[0-9]*
+
+# Dont upload pdf
+*.pdf
+
+# Custom
+SIGCHI-Reference-Format.bst
