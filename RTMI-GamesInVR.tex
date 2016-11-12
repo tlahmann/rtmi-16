@@ -35,13 +35,13 @@
 \usepackage[utf8]{inputenc} % for a UTF8 editor only
 \usepackage{tikz}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
-            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}} % circled icons for images
+            \node[shape=circle,draw,inner sep=2pt] (char) {#1};}} % circled icons for image citation
 						
 % If you want to use todo notes, marginpars etc. during creation of your draft document, you
 % have to enable the "chi_draft" option for the document class. To do this, change the very first
 % line to: "\documentclass[chi_draft]{sigchi}". You can then place todo notes by using the "\todo{...}"
 % command. Make sure to disable the draft option again before submitting your final document.
-\usepackage{todonotes}
+\usepackage[backgroundcolor=yellow,textsize=small]{todonotes}
 \usepackage{blindtext}
 
 % Paper metadata (use plain text, for PDF inclusion and later
@@ -101,22 +101,41 @@
 
 \title{\plaintitle}
 
-\numberofauthors{2}
+\numberofauthors{1}
 \author{
 	\alignauthor{\authorname\\
 		\affaddr{Research Trends in Media Informatics}\\
 		\affaddr{Ulm, Germany}\\
 		\email{tobias.lahmann@uni-ulm.de}}
-	\alignauthor{Julian Frommel\\
-		\affaddr{Research Trends in Media Informatics}\\
-		\affaddr{Ulm, Germany}\\
-		\email{julian.frommel@uni-ulm.de}}
+%	\alignauthor{Julian Frommel\\
+%		\affaddr{Research Trends in Media Informatics}\\
+%		\affaddr{Ulm, Germany}\\
+%		\email{julian.frommel@uni-ulm.de}}
 }
 
 \maketitle
+\todo[inline]{need a title}
+
 %----------------------------------------------------------------------------------------
 %	Document
 %----------------------------------------------------------------------------------------
+
+\input{./sections/00abstract}
+
+\input{./sections/01keywords}
+
+\input{./sections/11introduction}
+
+\input{./sections/12furtherReserachTrends}
+
+\input{./sections/96discussion}
+
+\input{./sections/97summary}
+
+\input{./sections/98conclusion}
+
+\input{./sections/99references}
+
 
 topics: 
 \begin{itemize}
@@ -165,24 +184,6 @@ topics:
 	\item portability
 	\item displaying the player in the game (multiplayer stuff)
 \end{itemize}
-
-\input{./sections/00abstract}
-
-\input{./sections/01keywords}
-
-\input{./sections/11introduction}
-
-\input{./sections/12physicalAndMental}
-
-\input{./sections/13physicalObjects}
-
-\input{./sections/96discussion}
-
-\input{./sections/97summary}
-
-\input{./sections/98conclusion}
-
-\input{./sections/99references}
 
 \end{document}
 
