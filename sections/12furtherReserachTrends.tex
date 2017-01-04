@@ -13,8 +13,13 @@ electrical nerve stimulation ?
 	\item photo electric effects
 \end{itemize}
 
-\subsubsection{Movement}
-How Players can move better in VR (e.g. without becoming cybersik)
+\subsubsection{Locomotion}
+
+The principle described as \textit{artificial locomotion} is the method of moving in the virtual environment by triggering interfaces and telling the game where you want to go. This method is often used because it offers a great degree of freedom. But it also has the greatest disadvantage because the users senses provide different signals to the brain and thus holds the greatest potential to cause motion sickness.
+
+In \textit{natural locomotion} only the motion and rotation of the users head is used, no thumbstick/WASD or camera movement. Thus these do not cause sickness and enable constant presence.
+
+\textit{Cockpit locomotion} games use a vehicle with a cockpit to let you traverse a large environment. Whether this makes you sick varies between person, the size of the cockpit, and the intensity of the maneuvers that you are pulling. Generally, you will not get sick if you are only gently moving around in these games. 
 
 \begin{itemize}
 	\item point and teleport
@@ -26,9 +31,7 @@ How Players can move better in VR (e.g. without becoming cybersik)
 Point and teleport is a technique to move within a virtual environment. The user has to point, using his provided input method, as described before, on a surface and confirm the selection. The game then moves the camera, the virtual representation of the player to the location . By using this method the user can move through a world without the need to actual physical change of the location. An advantage is that the user can look at worlds from different points of view. 
 
 In the papers [blabla, foo, bar, and blubb] some techniques are described as how to give the player the feeling of actual movement but without the need of large or complicated real world environments. 
-Another \textcolor{red}{ansatz} has been made by the game developers of the game PORTAL. Building rooms completely out of tiles \textcolor{red}{gesteuert} of robotic arms can \textcolor{red}{umreißen} a whole room. Configurable, extendable and in moderate size. Combining this with VR holds great potential to create the perfect illusion.
-
-Moving environments as in racing games
+Another approach has been made by the game developers of the game PORTAL. Building rooms completely out of tiles controlled by robotic arms can outline a whole room. Configurable, expendable and in moderate size. Combining this with VR holds great potential to create the perfect illusion.
 
 flack! pew pew
 
@@ -77,9 +80,9 @@ Using something similar to the modular tiles creating levels in portal (a 100x10
 	\includegraphics[width=0.9\columnwidth]{./figures/portallabrattest}
 	\caption[Portal 2 : Lab Rat Panel Test]{Screenshot from the promotional video 'Portal 2 : Lab Rat Panel Test' (\ccbyncsa) of the game \textit{Portal 2 \textregistered\textcopyright} showing the general setup of floor panels mounted to robotic arms. This method enables developers to modify the structure of the floor at runtime.\footnotemark}~\label{fig:portallabrattest}
 \end{figure}
-\footnotetext{\textcopyright "Valve Software", Portal 2, [Online; accessed November 05., 2016],[Digitally revised] \url{https://www.youtube.com/watch?v=S7vFxs0ycn0}}
+\footnotetext{\textcopyright~Valve Software, Portal 2, [Online; accessed November 05., 2016],[Digitally revised] \url{https://www.youtube.com/watch?v=S7vFxs0ycn0}}
 
-I can think of an application where the tiles are intelligently configured to 'disapear' (into the ground) behind the player and appear in front of him (out of the ground again) kind of like a hamster wheel, macking the playable area seem infinitely large to the player. Kind of like in Portal~\cite{game:portal} video game.
+I can think of an application where the tiles are intelligently configured to 'disappear' (into the ground) behind the player and appear in front of him (out of the ground again) kind of like a hamster wheel, making the playable area seem infinitely large to the player. Kind of like in Portal~\cite{game:portal} video game.
 
 Approaches like the one taken by Hiroo Iwata, Hiroaki Yano, Hiroyuki Fukushima in their CirculaFloor~\cite{Iwata:2005:CLI:1078037.1079777} or~\cite{Souman:2010:MVW:1670671.1670675} go are interesting and should be further investigated. 
 
@@ -88,7 +91,20 @@ Approaches like the one taken by Hiroo Iwata, Hiroaki Yano, Hiroyuki Fukushima i
 \subsection{Increasing The Performance Of Devices For VR Gaming}
 How can VR leave the living room for good? OR better: how can VR become mobile/leave a base station in the future.
 
+TP cast for Vive \footnote{\textcopyright~HTC Corporation, TP Cast, 2016, accessed January 03., 2017 \url{https://www.vive.com/us/newsroom/2016/2016-11-11/}}
+
+Good for this is that the user does not have to depend on the limited space.
+
+Systems can reach far more potential with the development of shape recognition -> transform the own apartment/home to a fantasy world, where everything is touchable. (a world where you can interact with your surroundings etc. )
+
+Game where you are a giant ant miniature npcs are walking on your bed/living room table/toilet -> needs development of cameras in the headsets
+
 \todo[inline]{JF: Wieso sollte es denn aus dem Wohnzimmer raus? Das ist doch gerade für den Anwendungsfall der Zielbereich}
 
-\todo{Warum 90fps?? \url{https://www.reddit.com/r/oculus/comments/3zgva1/why_is_constant_90_fps_so_important_in_vr/}}
+\todo[inline]{Warum 90fps?? \url{https://www.reddit.com/r/oculus/comments/3zgva1/why_is_constant_90_fps_so_important_in_vr/}}
+
+Too low of a frame rate in VR is probably one of the biggest causes of VR-sickness.
+
+Some would say 60FPS isn't good enough anyway, but the issue is with the refresh rate of the screen. When your frame rate is changing and/or not matching evenly with the refresh rate of the screen (90Hz in this case), you get perceived judder/tearing and all sorts of visual nastiness. On a standard monitor you can ignore this for the most part unless you're hardcore into visuals. But for VR, having a jerky uneven refresh of your display is all sorts of disorientating and generally quite uncomfortable.
+
 %\textcolor{gray}{\blindtext[1]}
