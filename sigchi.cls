@@ -1409,7 +1409,7 @@
 \setcounter{enumi}{1}
 \def\thebibliography#1{%
     \section{%
-       {REFERENCES}
+       {References}
         \@mkboth{{\refname}}{{\refname}}%
     }%
 %    \list{[\arabic{enumi}]}{%
