@@ -76,16 +76,17 @@ While games that do not use VR can handle attention themselves by just moving th
 
 A study realized in January 2017 by myself spanning over 40 participants showed that a majority of people had never played a virtual reality game before. It was found that most persons describing themselves as gamers would agree that VR games should be immersive and intuitive. Intuitive meaning that the interaction and locomotion in the game is as close as possible to movement in the real world.
 
-The study has also shown that most of the people that have tried a VR game in person would describe themselves as gamers, although also many other participants affirmed this question. The question resulting is if people are more likely to test vr in person if they think they already are gamers.
+The study has also shown that most of the people that have tried a VR game in person would describe themselves as gamers, although also many other participants affirmed this question. The question resulting is if people are more likely to test VR in person if they think they already are gamers.
 
 \begin{table}[h]
 	\caption{Gamers and non games have been asked to rate the following aspects, whereas 1 means they strongly disagree, 4 means they strongly agree - 0: unsure. The question asked was whether they thing a VR game should be...}~\label{tab:study}
 	
 	\renewcommand{\arraystretch}{1.3}% for the vertical padding
-	\begin{tabular*}{\columnwidth}{l @{\extracolsep{\stretch{1}}}*{5}{r}@{}}
+	\small
+	\begin{tabular*}{0.98\columnwidth}{l @{\extracolsep{\stretch{1}}}*{5}{r}@{}}
 		 & 1 & 2 & 3 & 4 & 0 \\
 		\hline
-		Innersive & 0 & 0 & 10 & 34 & 2 \\
+		Immersive & 0 & 0 & 10 & 34 & 2 \\
 		Active & 2 & 10 & 21 & 1 & 2 \\
 		Intuitive & 0 & 2 & 24 & 16 & 4 \\
 		Simple & 4 & 24 & 9 & 4 & 5 \\
@@ -101,99 +102,76 @@ The study has also shown that most of the people that have tried a VR game in pe
 
 \subsection{Motivation In Games}
 
-The people of \textit{Quantic Foundry} have developed an online survey for categorizing 
-gamers and their motivation. By filling in the survey in an 
-online app users could receive a report on their gaming motivation. They have been using a bootstrap approach to collect data and iterate on the model. While the 
-data came in they kept rerunning a factor analysis until a robust model 
-emerged. 
+The staff of \textit{Quantic Foundry} have developed an online survey for categorizing 
+gamers and their motivation.\footnotemark[6] Users can receive a personalized report on their gaming incentive by completing a survey with about 14 questions on their approach towards games, their different gaming aspects and habits. \newline
+Over the course of early 2016 until late august 220 thousand individual people took the test. Among the participants where about 81\% male and 18\% female users. The age ranged from 13 to 77 years and the median was 25 years. Most of the gamers came from north America and the western EU.
 
-This resulted in 220.000 people who took the test and received their 
-personalized results online. Among the people who took the survey where 81\% 
-male and 18\% female users. The age ranged from 13 to 77 years and the median 
-was 25 years. Most of the gamers came from north America and the western EU.
-
-The Model that emerged from the data they have got can be seen in 
-\textbf{Figure~\ref{fig:gameMotivation}}~\footnotemark[6] and the clustered 
-categories are described as follows:
+The most interesting part is the model that emerged from the data they have got. The categories can be seen in \textbf{Figure~\ref{fig:gameMotivation}}. They have described the categories as follows:
 
 \begin{figure}
 	\centering
-	\includegraphics[width=0.99\columnwidth]{./figures/motivation}
-	\caption[motivation]{The 6 categories of motivation in games. 
-	\footnotemark[6]}~\label{fig:gameMotivation}
+	\begin{subfigure}[b]{0.49\columnwidth}
+		\centering
+		\includegraphics[width=\textwidth]{./figures/motivation}
+		\caption[motivation]{Categories of motivation}~\label{fig:gameMotivation}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.49\columnwidth}
+		\centering
+		\includegraphics[width=\textwidth]{./figures/clusters}
+		\caption[motivation]{Motivational clusters}~\label{fig:motivationClusters}
+	\end{subfigure}
+	\caption[]{Left: The 6 categories of motivation in games as described by Nick Yee of \textit{Quantic Foundry} in their talk about motivation. | Right: Three motivational clusters that followed from the study of Nick Yee and \textit{Quantic Foundry}. Blue is mastery-achievement cluster, yellow is immersion-creativity cluster and red is action-social cluster.~\footnotemark[6]}
 \end{figure}
 
 \begin{description}%[align=right,labelwidth=2.5cm]
-	\item[Action] \textit{The appeal of mayhem and chaos and exciting, fast 
-	paced game play context. Action as motivation addresses people who like the 
-	thrill and the challenge.}
-	\item[Social] \textit{Contains both; the challenge and the interesting 
-	collaboration and socializing. The social category describes people who 
-	like to be together with others, socialize, help and/or compete with 
-	others.}
-	\item[Mastery] \textit{Is about long term planning and thinking. Whether it 
-	is practicing the game to take on the highest difficulty or the enjoyment 
-	of strategy; thinking and planning ahead. It mostly appeals to people 
-	making complex decisions.}
-	\item[Achievement] \textit{Different ways of getting points in the context 
-	of the game. On one side points as in points, stars, trophies et cetera, or 
-	points in the sense of power: leveling up as quickly as possible, getting 
-	the best equipment and gear.}
-	\item[Immersion] \textit{Different ways of becoming embedded in the story 
-	of the world. The sheer sense of being immersed, being someone else, 
-	somewhere else. Engaging with an elaborate plot, interesting characters and 
-	deep back stories.}
-	\item[Creativity] \textit{The appeal of making the game your own in any 
-	kind of way. Creating a unique avatar, customizing your city. And on the 
-	other hand discovery. Playing the game in the broadest sense of the word.}
+	\item[Action] \textit{''The appeal of mayhem and chaos and exciting, fast paced game play context.''} \newline Action as motivation addresses people who like the thrill and the challenge.
+	
+	\item[Social] \textit{''Contains both: the challenge and the interesting collaboration and socializing.''} \newline The social category describes people who like to socialize, help and/or compete with others.
+	
+	\item[Mastery] \textit{''Is about long term planning and thinking. Practicing the game to take on the highest difficulty or the enjoyment of strategy.''} \newline It mostly appeals to the peoples wish to make complex decisions.
+	
+	\item[Achievement] \textit{''Different ways of getting points in the context of the game. Credits, points, stars, trophies et cetera. Also, in another way, power. Meaning leveling up or getting the best equipment and gear.''} \newline Rouses some peoples collector's passion as well as appeals to people who want to feel powerful.
+	
+	\item[Immersion] \textit{''Different ways of becoming embedded in the story of the world.''} \newline For those people who want to become someone else or want to experienced interesting stories.
+	
+	\item[Creativity] \textit{''Making the game your own in any kind of way. [...] Uniqueness, customization and discovery.''} \newline Mostly describing people who like creativity in games and those who want to customize their experience.
+
 \end{description}
+
 \footnotetext[6]{"Gamer Motivation Profile Findings - \#GamesUR US Conference 2016" Quantic Foundry Website, March, 25., 2015, accessed November 05., 2016, \url{http://quanticfoundry.com/2016/04/07/gdc-talk/}}
 
-At a high level there are three motivational clusters that emerge from this 
-structure. These clusters can be seen in 
-\textbf{Figure~\ref{fig:motivationClusters}}
+It was found that those gamers that fit into one of the six main categories often prefer similar aspects of a game as that players falling into another of the categories. \newline
+From this categorization the next step for them was to analyze their results. They have found that at a high level there are \textit{three} motivational clusters that combine multiple of the categories into sections of similar gaming behaviors. These clusters can be seen in \textbf{Figure~\ref{fig:motivationClusters}} and are described as follows:
 
-The first is the action-social cluster, combining the action gameplay with 
-social activities in games by more fine grain categories such as 
-\textit{community}, \textit{destruction}, \textit{excitement} and so forth. 
+First there is the \textbf{action-social} cluster, combining the action-packed gameplay with social activities in games. As described before this cluster holds people that like the thrill of the game and want to have action, but it also contains the challenge of the game as well as socializing. It was found that these gamers share some common interests such as \textit{community}, \textit{destruction} and \textit{excitement}. \newline
+The second cluster is \textbf{mastery-achievement}, containing players that want to become better. It is standing to reason that these classes are very much correlating in many ways. A multitude of games today offer many ways of collecting items as part of achievements and are also awarding them for collected rare items. A more fine grained description of the people in this category would be to describe them as gamers who like points such as \textit{competition}, \textit{strategy} and \textit{challenge}. \newline
+And the last cluster is \textbf{immersion-creativity}. With points like \textit{story}, \textit{fantasy} and \textit{design} it is the most compact in its variance. It does not surprise that immersion correlates with creativity as they are already very similar in many ways. 
 
-The second cluster is mastery-achievement, where players want to become better. 
-In this category points like \textit{competition}, \textit{strategy} and 
-\textit{challenge} are to be found. 
+They have further found that there are two traits which form kind of like bridges between clusters. \newline
+For one that is \textit{discovery}, where the player wants to discover new ways of playing the game as well as discover exciting places inside of the in game world. This can be categorizes both in the \textit{mastery-achievement} and the \textit{immersion-creativity} cluster because it holds aspects from the first as well as the latter.\newline 
+The second is indicated as \textit{power}, spanning a bridge between \textit{action-social} and \textit{mastery-achievement}, and appeals to the user to satisfy the urge to master the game and also be in the center of action. 
 
-And the last cluster is the immersion-creativity one. With points like 
-\textit{story}, \textit{fantasy} and \textit{design} this cluster is the most 
-compact in its variance. 
+\begin{center}
+	\small
+	$\ast$~$\ast$~$\ast$
+\end{center}
 
-Interesting is that there are two traits which form kind of like a bridge 
-between clusters. For one that is \textit{discovery}, where the player wants to 
-discover new ways of playing the game as well as discover exciting places 
-inside of the in game world. The second bridge is \textit{power} where the user 
-can satisfy the urge to master the game and also be in the action-social 
-cluster with mayhem et cetera. 
+In virtual reality not all categories convey easily. While \textit{action}, \textit{immersion} and \textit{creativity} are often already well implemented in todays games missing research on the \textit{social}, \textit{achievement} and \textit{mastery} parts avert a pivotal statement on the subject. \newline
+VR games are often designed to imply action. Many games use fast-paced gameplay techniques to offer the player thrilling experiences. This arises from the fact that modern HMDs offer not enough comfort to keep playing for very long periods of time. Games therefor have to entertain the user fast and convincing. Also they often require creative problem solving skills of their users and offer great ways of designing or customizing the game.\newline
+The immersion is already given by the fact that the user is playing a VR game, so this will not be specified further. 
 
-To draw a bow over to the virtual reality aspect of gamer motivation it is 
-important to notice that not all motivational categories convey easily to the 
-VR aspect. While \textit{immersion} and \textit{creativity} are already well 
-implemented in todays games missing research on the \textit{social} and 
-\textit{mastery} motivations avert a pivotal statement on the subject. 
+On the other hand not many approaches have been made to include other real players into the game. With this the social aspect of gaming motivation lacks somewhere behind other categories. A very small fraction of games have a well developed idea of how to include a second player into the game and even less games have a perfect representation of another player in the game, i.e. via avatar. \newline
+Gamers can not interact with other people very well while playing VR games, this not only owed to the fact that VR can not yet represent other players well, but also due to the missing presence of items in the real world. An application for real world items is that in games for most social interaction a player can 'trade' items easily. How this problem could be tackled will be discussed in the section \textbf{Further Research trends}. \newline 
+The other two categories have not been developed into VR games a broad as in other games it remains uncertain what will be in the future.
 
-In VR games today not many approaches have been made to include other real 
-players into the game. A very small fraction of games has a well developed idea 
-of how to include a 'Player 2' into the game and even less games have a perfect 
-representation of another player in the game, i.e. via avatar. 
+With the previously presented games come different motivational inducements. \newline
+In Minecraft, the most frequently played game of the three, motivation will most certainly fall under the creativity point when playing on pc or console without HMDs. Whereas using a VR headset to play it will most likely address immersion at least as much as creativity because the game world and interaction will become more convincing to the user. Hence Minecraft clearly belongs to the \textit{immersion-creativity} cluster both in normal play mode as well as using a HMD.
 
-For a VR game it is apparent that the immersion is highly given, sadly there 
-has not been made a lot of research on the impact towards people and a clear 
-answer can not be given when asked what affects it has on the human psychology. 
+Keep Talking and Nobody Explodes has already a very immersive approach to playing the game. The view of the player does not differ much from the point of view gained in a the virtual environment, although the user can be even more included when playing with a HMD.
 
-\begin{figure}
-	\centering
-	\includegraphics[width=0.99\columnwidth]{./figures/clusters}
-	\caption[motivation]{Three motivational clusters. Blue is 
-	mastery-achievement cluster, yellow is immersion-creativity cluster and red 
-	is action-social cluster.~\footnotemark[6]}~\label{fig:motivationClusters}
-\end{figure}
+Project CARS recieves more immersiveness as well as a better feeling for the action in the game since it varies much from the gameplay without headset. 
+
+In conclusion, the motivation of all three games gets included or increases in the \textit{immersion} category when using HMDs. The game developers have to implement a well defined method of interaction and a clear way of transferring the feeling inside their games to develop good VR games. 
 
 \subsection{Input Techniques}
 Because many of the HMD of earlier sections use similar approaches to enable 
@@ -224,7 +202,7 @@ There are three basic categories of locomotion present at this time in VR:
 
 The principle described as \textit{artificial locomotion} is the method of 
 moving in the virtual environment by triggering interfaces and telling the game 
-where you want to go. This method is often used because it offers a great 
+where the player wants to go. This method is often used because it offers a great 
 degree of freedom. But it also has the greatest disadvantage because the users 
 senses provide different signals to the brain and thus holds the greatest 
 potential to cause motion sickness.
@@ -243,14 +221,9 @@ There are different specific methods of artificial locomotion:
 	the user can observe at worlds from different points of view.
 \end{description}
 
-In \textit{natural locomotion} only the motion and rotation of the users head 
-is used, no movement through an input interface. This interaction with the game 
-wolds is very static and thus these kind of games do not cause sickness and 
-enable constant mental presence and longer playtimes to the user.
+In \textit{natural locomotion} only the motion and rotation of the users head is used. It requires no movement indicated through an input interface. This interaction with the game wolds is very static and thus these kind of games do not cause sickness and enable constant mental presence and longer playtimes to the user.
 
-With natural locomotion the user is limited to a local position in the game as 
-well as the virtual environment. But there are also different approaches to 
-make games using this 
+With natural locomotion the user is limited to a local position in the game as well as the virtual environment. But there are also different approaches to making games using this 
 \begin{description}
 	\item[Interaction with objects]The user can interact with objects right in 
 	front and around him. The objects are movable, turnable and sometimes 
@@ -261,7 +234,7 @@ make games using this
 	the position from which he is interacting with the object.
 \end{description}
 
-\textit{Cockpit locomotion} games use a vehicle with a cockpit to let you traverse a large environment. Whether this makes you sick varies between person, the size of the cockpit, and the intensity of the maneuvers that you are pulling. Generally, you will not get sick if you are only gently moving around in these games. 
+\textit{Cockpit locomotion} in games use a vehicle with a cockpit or stationary interaction space in a movable item to let the player traverse a large environment. Whether this evokes virtual reality sickness varies between persons, the size of the cockpit, and the intensity of the maneuvers that are performed. Generally, one will not get sick if only gentle movements are done.
 
 In cockpit locomotion the movement of the camera is not possible without moving 
 the surrounding environment
@@ -280,3 +253,5 @@ In research are not many approaches to the pros and cons of these locomotion
 techniques and no clear statement can be given on the best solution. 
 Future research trends will be looked at in the following section under 
 \textbf{Locomotion}
+
+%\todo{write about locomotion in the 3 games}
