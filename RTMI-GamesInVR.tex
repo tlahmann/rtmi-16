@@ -28,7 +28,9 @@
 \usepackage{mathptmx}
 \usepackage[pdftex]{hyperref}
 \usepackage{color}
+%\usepackage[table]{xcolor}
 \usepackage{booktabs}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 \usepackage{textcomp}
 % Some optional stuff you might like/need.
 \usepackage{microtype} % Improved Tracking and Kerning
@@ -38,6 +40,12 @@
 \usepackage{tikz}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
             \node[shape=circle,draw,inner sep=2pt] (char) {#1};}} % circled icons for image citation
+\newcommand{\divider}{
+	\begin{center}
+		\small
+		$\ast$~$\ast$~$\ast$
+	\end{center}
+}
 						
 % If you want to use todo notes, marginpars etc. during creation of your draft document, you
 % have to enable the "chi_draft" option for the document class. To do this, change the very first
@@ -50,7 +58,7 @@
 % re-using, if desired).  Use \emtpyauthor when submitting for review
 % so you remain anonymous.
 \def\authorname{Tobias Lahmann}
-\def\plaintitle{Games and the virtual reality: an introduction to research trends}
+\def\plaintitle{Games and the Virtual Reality:\\An Introduction to Research Trends}
 \def\plainauthor{\authorname}
 \def\emptyauthor{}
 \def\plainkeywords{Virtual reality, games, psychology, research, interaction, development}
@@ -132,8 +140,6 @@
 \input{./sections/12furtherReserachTrends}
 
 \input{./sections/96discussion}
-
-\input{./sections/97summary}
 
 \input{./sections/98conclusion}
 
